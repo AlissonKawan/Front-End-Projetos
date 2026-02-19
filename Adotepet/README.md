@@ -36,4 +36,4 @@ AdotePet é uma aplicação web que conecta animais de estimação que precisam 
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/AlissonKawan/Adotepets.git
+git clone git clone https://github.com/AlissonKawan/Front-End-Projetos.git
