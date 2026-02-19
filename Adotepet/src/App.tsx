@@ -7,20 +7,23 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <div className="w-full bg-white shadow-md py-6 px-6">
-        <div className="max-w-3xl mx-auto">
+      <div className="w-full bg-white shadow-md py-4 sm:py-6 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
           <Header title="AdotePet ❤️" />
         </div>
       </div>
 
       {/* Conteúdo principal */}
-      <main className="p-8">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-xl mb-6 text-red-600">Encontre seu novo amigo</h2>
+      <main className="p-4 sm:p-6 md:p-8">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-lg sm:text-xl md:text-2xl mb-6 text-red-600">
+            Encontre seu novo amigo
+          </h2>
+
           <FilterBar />
-          
-          {/* Grid com cards menores */}
-          <div className="grid grid-cols-2 gap-5 mt-8">
+
+          {/* Grid responsivo */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
             <PetCard 
               nome="Max"
               especie="Cão"
@@ -38,6 +41,7 @@ function App() {
               localizacao="Xique-Xique, Brasil"
               imagem="/img/luna.jpg"
             />
+
             <PetCard
               nome="Thor"
               especie="Cão"
@@ -46,9 +50,10 @@ function App() {
               localizacao="Suzano, Brasil"
               imagem="/img/Thor.jpg"
             />
+
             <PetCard
               nome="Kratos"
-              especie="Passaro"
+              especie="Pássaro"
               porte="Pequeno"
               idade="3 anos"
               localizacao="Mongaba, Brasil"
